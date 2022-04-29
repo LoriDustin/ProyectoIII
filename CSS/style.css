@@ -1,3 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap");
+* {
+  font-family: "Open Sans";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  color: #000;
+  line-height: 1.5;
+}
 
+.fa-bars {
+  display: none;
+}
+
+.home {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.nav {
+  width: 20%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgb(17, 17, 17);
+  display: inline-block;
+}
+.nav p {
+  padding-top: 70px;
+  font-size: 1.8rem;
+  color: #fff;
+  text-align: center;
+  user-select: none;
+}
+.nav p span {
+  color: #373a9d;
+  font-weight: 700;
+}
+.nav .link_item {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nav .link_item li {
+  padding-bottom: 25px;
+}
+.nav .link_item li a {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: ease-in-out 0.5s;
+}
+.nav .link_item li a:hover {
+  letter-spacing: 0.2rem;
+  color: #373a9d;
+}
+.nav .Sociales {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 20px;
+}
+.nav .Sociales a {
+  color: #fff;
+  font-size: 1.8rem;
+  letter-spacing: 20px;
+  transition: ease-in-out 0.5s;
+}
+.nav .Sociales a:hover {
+  color: #373a9d;
+  font-size: 2rem;
+}
+
+.cuerpo {
+  width: 80%;
+  background-color: rgba(11, 7, 7, 0.2);
+  padding-left: 1.5rem;
+}
 
 /*# sourceMappingURL=style.css.map */
