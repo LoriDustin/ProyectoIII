@@ -6,7 +6,6 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
-  color: #000;
   line-height: 1.5;
 }
 
@@ -21,7 +20,7 @@
 }
 
 .nav {
-  width: 20%;
+  width: 25%;
   position: fixed;
   top: 0;
   left: 0;
@@ -78,9 +77,122 @@
 }
 
 .cuerpo {
-  width: 80%;
+  width: 75%;
   background-color: rgba(11, 7, 7, 0.2);
   padding-left: 1.5rem;
+  display: inline-block;
+}
+.cuerpo .Inicio {
+  display: flex;
+  flex-direction: row;
+}
+.cuerpo .Inicio .text {
+  padding-top: 100px;
+  display: inline-block;
+}
+.cuerpo .Inicio .text .text1 {
+  color: #373a9d;
+  font-size: 1.5rem;
+}
+.cuerpo .Inicio .text .text2 {
+  padding-bottom: 20px;
+  font-size: 2.4rem;
+  color: #fff;
+}
+.cuerpo .Inicio .text .text2 span {
+  color: #373a9d;
+  font-weight: 700;
+}
+.cuerpo .Inicio .text .text3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+.cuerpo .Inicio .text .text4 {
+  text-align: justify;
+  padding-right: 20px;
+  padding-bottom: 50px;
+}
+.cuerpo .Inicio .text .btn {
+  margin-top: 1rem;
+  padding: 10px 35px;
+  background: #373a9d;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: ease-in-out 0.5s;
+}
+.cuerpo .Inicio .text .btn:hover {
+  letter-spacing: 0.2rem;
+  background-color: #000;
+}
+.cuerpo .Inicio .imagen {
+  padding-top: 20px;
+  width: 100%;
+}
+.cuerpo .Inicio .imagen img {
+  width: 100%;
+}
+.cuerpo .AcercadeMi {
+  padding-top: 30px;
+  display: inline-block;
+}
+.cuerpo .AcercadeMi .SobreMi {
+  font-size: 4rem;
+}
+.cuerpo .AcercadeMi .SobreMi span {
+  color: #373a9d;
+  font-weight: 700;
+}
+.cuerpo .AcercadeMi .datosGerenerales {
+  display: flex;
+}
+.cuerpo .AcercadeMi .datosGerenerales .imagen {
+  width: 100%;
+}
+.cuerpo .AcercadeMi .datosGerenerales .imagen img {
+  width: 100%;
+}
+.cuerpo .AcercadeMi .datosGerenerales .presentacion {
+  padding-right: 40px;
+  padding-left: 20px;
+}
+.cuerpo .AcercadeMi .datosGerenerales .presentacion h3 {
+  font-size: 1.5rem;
+  text-align: justify;
+  padding-bottom: 10px;
+}
+.cuerpo .AcercadeMi .datosGerenerales .presentacion .text {
+  text-align: justify;
+  padding-bottom: 20px;
+}
+.cuerpo .AcercadeMi .datosGerenerales .presentacion .datos {
+  display: inline-block;
+}
+.cuerpo .AcercadeMi .datosGerenerales .presentacion .datos .personal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+.cuerpo .AcercadeMi .datosGerenerales .presentacion .datos .personal .personal1 {
+  padding-right: 40px;
+}
+.cuerpo .AcercadeMi .datosGerenerales .presentacion .datos .personal .personal1 p {
+  text-align: justify;
+  padding-bottom: 10px;
+}
+.cuerpo .AcercadeMi .datosGerenerales .presentacion .datos .personal .personal1 p span {
+  color: #373a9d;
+  font-weight: 700;
+}
+.cuerpo .AcercadeMi .datosGerenerales .presentacion .datos .personal .personal2 p {
+  text-align: justify;
+  padding-bottom: 10px;
+}
+.cuerpo .AcercadeMi .datosGerenerales .presentacion .datos .personal .personal2 p span {
+  color: #373a9d;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */

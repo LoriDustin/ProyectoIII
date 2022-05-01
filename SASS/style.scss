@@ -13,22 +13,22 @@ $main-box-shadow: 0 .5rem 1rem rgba(26, 25, 25, 0.8);
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
-    color: #000;
     line-height: 1.5;
+
 }
 
 .fa-bars {
     display: none;
 }
 
-.home{
+.home {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
 }
 
 .nav {
-    width: 20%;
+    width: 25%;
     position: fixed;
     top: 0;
     left: 0;
@@ -59,7 +59,7 @@ $main-box-shadow: 0 .5rem 1rem rgba(26, 25, 25, 0.8);
 
         li {
             padding-bottom: 25px;
-            
+
 
             a {
                 color: #fff;
@@ -85,9 +85,9 @@ $main-box-shadow: 0 .5rem 1rem rgba(26, 25, 25, 0.8);
             color: #fff;
             font-size: 1.8rem;
             letter-spacing: 20px;
-            
             transition: ease-in-out 0.5s;
-            &:hover{
+
+            &:hover {
                 color: $main-color;
                 font-size: 2.0rem;
             }
@@ -99,7 +99,167 @@ $main-box-shadow: 0 .5rem 1rem rgba(26, 25, 25, 0.8);
 
 
 .cuerpo {
-    width: 80%;
+    width: 75%;
     background-color: rgba(11, 7, 7, 0.2);
     padding-left: 1.5rem;
+    display: inline-block;
+
+    .Inicio {
+        display: flex;
+        flex-direction: row;
+
+        .text {
+            padding-top: 100px;
+            display: inline-block;
+
+            .text1 {
+                color: $main-color;
+                font-size: 1.5rem;
+
+            }
+
+            .text2 {
+
+                padding-bottom: 20px;
+                font-size: 2.4rem;
+                color: #fff;
+
+                span {
+                    color: $main-color;
+                    font-weight: 700;
+                }
+            }
+
+            .text3 {
+                font-size: 1.8rem;
+                font-weight: 700;
+                padding-bottom: 10px;
+            }
+
+            .text4 {
+                text-align: justify;
+                padding-right: 20px;
+                padding-bottom: 50px;
+            }
+
+            .btn {
+                margin-top: 1rem;
+                padding: 10px 35px;
+                background: $main-color;
+                color: #fff;
+                font-size: 1.2rem;
+                transition: ease-in-out 0.5s;
+
+                &:hover {
+                    letter-spacing: .2rem;
+                    background-color: #000;
+                }
+            }
+        }
+
+        .imagen {
+            padding-top: 20px;
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+    }
+
+    .AcercadeMi {
+        padding-top: 30px;
+        display: inline-block;
+
+        .SobreMi {
+            font-size: 4rem;
+
+            span {
+                color: $main-color;
+                font-weight: 700;
+            }
+        }
+
+        .datosGerenerales {
+            display: flex;
+
+
+
+            .imagen {
+                width: 100%;
+                
+                img {
+                    width: 100%;
+                    
+                }
+            }
+
+            .presentacion {
+                padding-right: 40px;
+                padding-left: 20px;
+
+                h3 {
+                    font-size: 1.5rem;
+                    text-align: justify;
+                    padding-bottom: 10px;
+                }
+
+                .text {
+                    text-align: justify;
+                    padding-bottom: 20px;
+                }
+
+                .datos {
+                    display: inline-block;
+
+                    .personal {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        padding-bottom: 50px;
+
+                        .personal1 {
+                            padding-right: 40px;
+                            p {
+                                text-align: justify;
+                                padding-bottom: 10px;
+
+                                span {
+                                    color: $main-color;
+                                    font-weight: 700;
+                                }
+                            }
+
+                        }
+
+                        .personal2 {
+                            
+                            p {
+                                text-align: justify;
+                                padding-bottom: 10px;
+                                span {
+                                    color: $main-color;
+                                    font-weight: 700;
+                                }
+                            }
+
+                        }
+
+
+
+                    }
+
+
+                    .btn {}
+                }
+
+
+            }
+        }
+
+    }
+
+
 }
