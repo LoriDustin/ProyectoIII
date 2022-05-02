@@ -9,6 +9,20 @@
   line-height: 1.5;
 }
 
+#menu-bars {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: #373a9d;
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+  z-index: 1000;
+}
+
 .fa-bars {
   display: none;
 }
@@ -145,6 +159,8 @@
 }
 .cuerpo .AcercadeMi .datosGerenerales {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 .cuerpo .AcercadeMi .datosGerenerales .imagen {
   width: 100%;
@@ -224,6 +240,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
   padding: 0.5rem 0;
 }
 .cuerpo .Servicio .servic_item .item {
@@ -267,6 +284,201 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+}
+.cuerpo .Experiencia .ExperGeneral .ExpeEspe {
+  width: 45%;
+  text-align: center;
+  padding: 1rem;
+  background: rgba(25, 20, 20, 0.1);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(26, 25, 25, 0.8);
+  margin: 1rem 1rem;
+}
+.cuerpo .Experiencia .ExperGeneral .ExpeEspe .contenido {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.cuerpo .Experiencia .ExperGeneral .ExpeEspe .contenido span {
+  color: #fff;
+  font-size: 1.2rem;
+  background: #373a9d;
+  border-radius: 50rem;
+  padding: 0.4rem 1rem;
+}
+.cuerpo .Experiencia .ExperGeneral .ExpeEspe .contenido h3 {
+  font-size: 2rem;
+  padding: 0.5rem 0;
+  color: #111;
+}
+.cuerpo .Experiencia .ExperGeneral .ExpeEspe .contenido p {
+  font-size: 1rem;
+  color: #666;
+  text-align: justify;
+}
+.cuerpo .Portafolio {
+  display: inline-block;
+}
+.cuerpo .Portafolio h1 {
+  font-size: 3.5rem;
+}
+.cuerpo .Portafolio h1 span {
+  color: #373a9d;
+  font-weight: 700;
+}
+.cuerpo .Portafolio .proyect {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.cuerpo .Portafolio .proyect .project-item {
+  display: none;
+}
+.cuerpo .Portafolio .proyect .project-item.active {
+  display: block;
+  animation: scaleUp 0.25s ease forwards;
+}
+.cuerpo .Portafolio .proyect .project-item a {
+  width: 100%;
+}
+.cuerpo .Portafolio .proyect .project-item a .project-img {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.cuerpo .Portafolio .proyect .project-item a .project-img img {
+  width: 100%;
+  height: 100%;
+  transition: 0.25s ease;
+}
+.cuerpo .Portafolio .proyect .project-item a .project-img img:hover {
+  transform: scale(1.1);
+}
+.cuerpo .Portafolio .proyect .project-item a h3 {
+  color: #111;
+  font-size: 1rem;
+}
+.cuerpo .Portafolio .proyect .project-item a p {
+  color: #666;
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+.cuerpo .Contacto {
+  padding-bottom: 50px;
+}
+.cuerpo .Contacto h1 {
+  font-size: 3.5rem;
+  padding-bottom: 20px;
+}
+.cuerpo .Contacto .contacto_item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-bottom: 0.5rem;
+}
+.cuerpo .Contacto .contacto_item .contac {
+  text-align: center;
+  padding: 2rem;
+  margin-right: 2%;
+  background: rgba(25, 20, 20, 0.1);
+  box-shadow: 0 0.5rem 1rem rgba(26, 25, 25, 0.8);
+  border-radius: 0.5rem;
+  margin-bottom: 5%;
+}
+.cuerpo .Contacto .contacto_item .contac i {
+  height: 3rem;
+  width: 3rem;
+  padding-top: 15px;
+  font-size: 1rem;
+  background: #373a9d;
+  color: #fff;
+  border-radius: 50%;
+}
+.cuerpo .Contacto .contacto_item .contac h3 {
+  color: #111;
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
+  padding-top: 1rem;
+}
+.cuerpo .Contacto .contacto_item .contac p {
+  color: #666;
+  font-size: 1rem;
+}
+
+.footer {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #666;
+  background: #fff;
+}
+.footer span {
+  color: #373a9d;
+}
+
+/* media queries  */
+@media (max-width: 991px) {
+  .html {
+    font-size: 55%;
+  }
+
+  body {
+    padding: 0;
+  }
+
+  #menu-bars {
+    display: initial;
+  }
+
+  .nav {
+    left: -120%;
+  }
+  .nav.active {
+    left: 0%;
+    width: 30%;
+    z-index: 10000;
+  }
+
+  .cuerpo {
+    width: 100%;
+  }
+}
+@media (max-width: 874px) {
+  html {
+    font-size: 90%;
+  }
+  html .home .Inicio {
+    flex-direction: column;
+    justify-content: center;
+  }
+  html .home .Inicio .text {
+    width: 100%;
+  }
+  html .home .Inicio .imagen {
+    width: 90%;
+  }
+  html .nav {
+    width: 100%;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 70%;
+  }
+
+  .nav {
+    width: 100%;
+  }
+
+  .cuerpo .AcercadeMi .datosGerenerales {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
