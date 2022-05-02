@@ -1,9 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
 
+
+
 $main-color:#373a9d;
 $main-background:rgba(25, 20, 20, 0.1);
 $main-box-shadow: 0 .5rem 1rem rgba(26, 25, 25, 0.8);
 
+@mixin importe-text {
+    font-size: 3.5rem
+}
+
+@mixin span {
+    color: $main-color;
+    font-weight: 700;
+}
 
 
 * {
@@ -192,11 +202,10 @@ $main-box-shadow: 0 .5rem 1rem rgba(26, 25, 25, 0.8);
         display: inline-block;
 
         .SobreMi {
-            font-size: 3.5rem;
+            @include importe-text;
 
             span {
-                color: $main-color;
-                font-weight: 700;
+                @include span;
             }
         }
 
@@ -310,11 +319,10 @@ $main-box-shadow: 0 .5rem 1rem rgba(26, 25, 25, 0.8);
 
     .Servicio {
         h1 {
-            font-size: 3.5rem;
+            @include importe-text;
 
             span {
-                color: $main-color;
-                font-weight: 700;
+                @include span;
             }
         }
 
@@ -368,11 +376,10 @@ $main-box-shadow: 0 .5rem 1rem rgba(26, 25, 25, 0.8);
 
     .Experiencia {
         h1 {
-            font-size: 3.5rem;
+            @include importe-text;
 
             span {
-                color: $main-color;
-                font-weight: 700;
+                @include span;
             }
         }
 
@@ -431,7 +438,7 @@ $main-box-shadow: 0 .5rem 1rem rgba(26, 25, 25, 0.8);
         display: inline-block;
 
         h1 {
-            font-size: 3.5rem;
+            @include importe-text;
 
             span {
                 color: $main-color;
@@ -506,7 +513,7 @@ $main-box-shadow: 0 .5rem 1rem rgba(26, 25, 25, 0.8);
         padding-bottom: 50px;
 
         h1 {
-            font-size: 3.5rem;
+            @include importe-text;
             padding-bottom: 20px;
         }
 
