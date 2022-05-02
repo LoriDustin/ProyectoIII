@@ -97,6 +97,7 @@ $main-box-shadow: 0 .5rem 1rem rgba(26, 25, 25, 0.8);
 
 }
 
+// Cuerpo
 
 .cuerpo {
     width: 75%;
@@ -168,12 +169,15 @@ $main-box-shadow: 0 .5rem 1rem rgba(26, 25, 25, 0.8);
 
     }
 
+
+    // AcercadeMi
+
     .AcercadeMi {
         padding-top: 30px;
         display: inline-block;
 
         .SobreMi {
-            font-size: 4rem;
+            font-size: 3.5rem;
 
             span {
                 color: $main-color;
@@ -188,10 +192,13 @@ $main-box-shadow: 0 .5rem 1rem rgba(26, 25, 25, 0.8);
 
             .imagen {
                 width: 100%;
-                
+
+
                 img {
                     width: 100%;
-                    
+                    height: 100%;
+                    border: #fff 10px solid;
+                    border-radius: 5%;
                 }
             }
 
@@ -222,6 +229,7 @@ $main-box-shadow: 0 .5rem 1rem rgba(26, 25, 25, 0.8);
 
                         .personal1 {
                             padding-right: 40px;
+
                             p {
                                 text-align: justify;
                                 padding-bottom: 10px;
@@ -235,10 +243,11 @@ $main-box-shadow: 0 .5rem 1rem rgba(26, 25, 25, 0.8);
                         }
 
                         .personal2 {
-                            
+
                             p {
                                 text-align: justify;
                                 padding-bottom: 10px;
+
                                 span {
                                     color: $main-color;
                                     font-weight: 700;
@@ -251,8 +260,28 @@ $main-box-shadow: 0 .5rem 1rem rgba(26, 25, 25, 0.8);
 
                     }
 
+                    .btn {
+                        display: inline-block;
 
-                    .btn {}
+                        a {
+
+                            margin-top: 1rem;
+                            padding: 10px 35px;
+                            background: $main-color;
+                            color: #fff;
+                            font-size: 1.2rem;
+                            transition: ease-in-out 0.5s;
+                            margin-right: 20px;
+
+                            &:hover {
+                                letter-spacing: .2rem;
+                                background-color: #000;
+                            }
+
+                        }
+
+                    }
+
                 }
 
 
@@ -261,5 +290,93 @@ $main-box-shadow: 0 .5rem 1rem rgba(26, 25, 25, 0.8);
 
     }
 
+    // Servicios
+
+    .Servicio {
+        h1 {
+            font-size: 3.5rem;
+
+            span {
+                color: $main-color;
+                font-weight: 700;
+            }
+        }
+
+        .servic_item {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 0.5rem 0;
+        
+            .item {
+                width: 45%;
+                text-align: center;
+                margin-right: 30px;
+                margin-bottom: 30px;
+                padding: 20px 10px;
+                background: $main-background;
+                border-radius: .5rem;
+                box-shadow: $main-box-shadow;
+
+                i {
+                    height: 5rem;
+                    width: 5rem;
+                    line-height: 5rem;
+                    font-size: 2.0rem;
+                    color: #fff;
+                    background: $main-color;
+                    border-radius: 50%;
+                }
+
+                h3 {
+                    color: #444;
+                    font-size: 1.5rem;
+                    padding-top: 1rem;
+                  }
+              
+                  p {
+                    color: #666;
+                    font-size: 1.0rem;
+                    padding-top: .5rem;
+                    text-align: justify;
+                  }
+            }
+
+        }
+
+
+    }
+
+    // Servicios
+
+    .Experiencia{
+        h1 {
+            font-size: 3.5rem;
+
+            span {
+                color: $main-color;
+                font-weight: 700;
+            }
+        }
+
+        .ExperGeneral{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .ExpeEspe{
+
+
+
+                .contenido{
+
+                }
+
+            }
+
+
+
+        }
+    }
 
 }
